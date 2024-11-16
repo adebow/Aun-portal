@@ -20,7 +20,7 @@ import net.anone.aun.service.StudentService;
 @RequestMapping("/api/students_portal")
 public class StudentController {
 	
-	private StudentService studentService;
+	private final StudentService studentService;
 
 	public StudentController(StudentService studentService) {
 		this.studentService = studentService;
